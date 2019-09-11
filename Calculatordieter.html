@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+	 <!-- Styling inspired by the work of https://www.youtube.com/watch?v=6v4vBXL-qkY
+Do not highlight code taken from https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-->
+	<style>
+	body {
+			
+			 
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+		background:grey;
+			 
+		}
+		#top_display{
+			height: 80px; 
+			color: grey;
+			text-align: left;
+			border-left:;
+				border-right:;
+			border-top:;
+			height:130px;
+				font-size: 48px;
+			background-color:grey;
+				overflow: hidden;
+			white-space: nowrap;
+			padding: 12px;
+			border-radius: 7px 7px 0 0;
+			width:328px;
+			margin-left:440px;
+			margin-top:150px;
+			
+		}
+		.row {
+			display:table;
+			table-layout: fixed;
+			width: 250px;
+			margin-top:-2;
+		 }
+	
+		
+		#display {
+		    outline:0;
+			border:none;
+			color:grey;
+			background-color:grey;
+			border-radius:10px;
+		
+			width:320px;
+			height:90px;
+			float:;
+			font-size:55px;
+			padding:;
+			margin-top:40px;
+			text-align:left;
+			
+			hover:#007676;
+			margin-left:4px;
+			
+				}
+		
+		.inputRow {
+			  outline:0;
+			border:none;
+			color:black;
+			outline-color:grey;
+			background-color:grey;
+			border-radius:0px;
+			width:350px;
+			height:65px;
+			border:;
+			text-align: center;
+			float:;
+			font-size:32px;
+			font-weight:100;
+			padding-top: 3px;
+			margin:;
+			cursor:pointer;
+			margin-top:-4;
+			padding-bottom:5px;
+			padding-top:5px;
+			margin-left:440px;
+			
+			
+		}
+		
+		input {
+			background-color: #F2F2F3;
+			color: grey;
+			width: 65px;
+			height: 65px;
+			border-radius: 65px;
+			border: ;
+			text-align: center;
+			cursor: pointer;
+			font-size: 32px;
+				font-weight:100;
+			padding-top: 3px;
+				padding-bottom: 3px;
+			button-outline:#9F9E9E; 
+			margin-top:-2px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			
+			
+			
+			
+		}
+		input:hover {
+  background-color: #08A5FA;
+		}
+		
+		
+		.inputrow2 {
+				width: 317px;
+		
+			background-color: grey;
+			outline-color: grey;
+			margin-top:2px;
+			margin-bottom:0px;
+			height: 65px;
+			border-radius:4px;
+			text-align: left;
+			padding-left: 33px;
+				padding-top: 2px;
+			padding-bottom:-6px;
+			margin-left:440px;
+			
+			
+		}
+		
+				
+			
+		
+		.operator
+		       {
+			background-color:#FC9C4A;
+			color: black;
+			width: 65px;
+			height: 65px;
+			text-align: center;
+			cursor: pointer;
+			font-size: 32px;
+			font-weight:100;
+				   padding-top:1.5px;
+				   padding-bottom:1px;
+			
+			}
+		#clearbutton {
+			height:40px;
+			width:40px;
+			
+		}
+	
+		
+	</style>
+<meta charset="UTF-8">
+<title>Calculator</title>
+</head>
+
+<body>
+	<form name="calculator">
+		<div id="myCalculator">
+		
+			
+			<div id="top_display">
+				<input type="text" name="display" id="display" disabled></div>
+			
+			
+			<div class="inputrow2">
+				
+				<input type="reset" id="clearbutton" value="C">
+		
+			</div>
+			
+			<div class="inputRow">
+				
+				<input type="button" name="seven" value="7"
+				   onclick="calculator.display.value+='7'">
+			
+			<input type="button" name="eight" value="8"
+				   onclick="calculator.display.value+='8'">
+		
+				<input type="button" name="nine" value="9"
+				   onclick="calculator.display.value+='9'">
+			
+			
+			
+			
+			
+				<input type="button" class="operator" name="multiply" value="x" onClick="document.calculator.display.value+='*'">
+					</div>
+			<div class="inputRow">
+			<input type="button" name="four" value="4"
+				   onclick="calculator.display.value+='4'">
+			
+				<input type="button" name="five" value="5"
+				   onclick="calculator.display.value+='5'">
+			
+			<input type="button" name="six" value="6"
+				   onclick="calculator.display.value+='6'">
+			<input type="button" class="operator" name="divide" value="&#247;" onClick="document.calculator.display.value+='/'">
+		
+			</div>
+			<div class="inputRow">
+				<input type="button" name="one" value="1"
+				    onclick="calculator.display.value+='1'">
+			
+			
+				<input type="button" name="two" value="2"
+				   onclick="calculator.display.value+='2'">
+			
+			<input type="button" name="three" value="3"
+				   onclick="calculator.display.value+='3'">
+				
+				
+			
+			
+			
+			 <input type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
+		
+				
+			</div>
+			
+			
+			<div class="inputRow">
+			<input type="button" name="0" value="0"
+				   onclick="calculator.display.value+='0'">
+			
+	
+		<input type="button" name="decimal" value="."
+			   onclick="calculator.display.value+='.'">
+			 <input type="button"  value="=" onclick="calculator.display.value=eval(calculator.display.value)">
+			
+					<input type="button" class="operator" name="minus" value="-" onClick="document.calculator.display.value+='-'">
+				
+		
+				
+			</div>
+			
+			<div class="inputrow">
+				
+			
+			</div>
+		</div>
+	</form>
+	
+	
+</body>
+</html>
