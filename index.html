@@ -13,19 +13,38 @@ a:visited {
 a:hover {color:#FB4706;
 	font-size:  26px;
     text-decoration: none;
+	width:300px;
 }
 a:active {
     text-decoration: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+		a
+		{
+
+		/* For Safari 3.1 to 6.0 */
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+  /* Standard syntax */
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
 		
 
 </style>
 	<style>
+		
+		@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+		
 		html{ height: 1700px;}
 	h1{position:fixed;
-		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-			font-size:35px;
+		font-family: 'Roboto', sans-serif;
+			font-style:medium 500;
+		font-size:30px;
 		color:white;
 		margin-top:10px;
 		margin-left: 20px;
@@ -33,11 +52,13 @@ a:active {
 		border:solid #FB4706 20px;
 		width:94.3%;}
 		
-		.wire {-20px;}
+		.wire {margin-top:-20px;}
 		
 		a{
-			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-			font-size: 24px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 20px;
+			font-style: light 300;
+			
 			color: black;
 		margin-top: 20px;
 		margin-left:500px;}
@@ -57,7 +78,7 @@ a:active {
 			
 		}
 		.portfolio
-		{font-family:helvetica;
+		{font-family:'Roboto', sans-serif;
 		
 			font-size: 24px;
 			color: black;
@@ -67,7 +88,7 @@ a:active {
 			
 		}
 		.portrait2
-		{font-family:helvetica;
+		{font-family:'Roboto', sans-serif;
 		
 			font-size: 24px;
 			color: black;
@@ -81,7 +102,7 @@ a:active {
 		}
 		
 		.essay2
-		{font-family:helvetica;
+		{font-family:'Roboto', sans-serif;
 		
 			font-size: 24px;
 			color: black;
@@ -94,7 +115,7 @@ a:active {
 		.essay {margin-top:-20px;}
 		
 		.Calculator
-		{font-family:helvetica;
+		{font-family:'Roboto', sans-serif;
 		
 			font-size: 24px;
 			color: black;
@@ -105,26 +126,31 @@ a:active {
 		}
 		.calc{margin-top:-20px;}
 		
+		
+		
+	
 			
 	.about{margin-top: 20%;
-			margin-left:20px;
-			color:white;
-		border: solid #FB4706 20px;
-			font-family:"Helvetica Neue", Helvetica, Arial, "sans-serif";
+			margin-left:30px ;
 		
+		border-bottom: solid #FB4706 2px;
+			color:black;
+		
+			font-family:'Roboto', sans-serif;
 			font-size: 20pt;
-		background:#FB4706;}
+		}
 		
-		p {color:white;
-			background:#FB4706;
+		p {color:black;
 			
-			margin-left:20px;
-			margin-top:-25px;
-			font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-		border: solid #FB4706 20px;
+			position:absolute;
+			margin-left:30px;
+			margin-top:25px;
+			font-family: 'Roboto', sans-serif;
+	
 			font-size: 15pt;
 			}
 	
+		
 	</style>
 	
 		
@@ -136,7 +162,8 @@ a:active {
 <body>
 	<h1>Tiffany/ Des 350</h1><br>
 	<div class="Final">National Parks</div>
-	<div class="wire"><a href="denaliwire.jpg" target="self">Wireframe</a><br><br></div>
+	<div class="wire"><a href="denaliwire.jpg" target="self">Wireframe</a><br></div>
+	<div class="poster"><a href="Denaliposter-04.jpg" target="self">Denali Poster</a></div>
 	<div class="portfolio">Portfolio Examples</div>
 	<div class="port"><a href="portfoliolinks.html" target="self">Portfolio Examples</a><br><br></div>
 		
@@ -157,10 +184,11 @@ a:active {
 	<a href="calculatorideas4-01.jpg" target="self">Dieter Rams calculator image</a><br>
 	<a href="Calculatordieter3.html" target="self">Dieter Rams calculator coded</a><br>
 	<a href="Calculator4.html" target="self">CSS Calculator</a><br><br></div>
-
-	<div class="about2"></div>
+</body>
+<div class="square"></div>
 	<div class="about">About Me</div>
 	<p>I'm a third year graphic design student interested in typography, print, branding and marketing.</p>
+	
 
 	
 	
@@ -169,5 +197,5 @@ a:active {
 	
 	
 	
-</body>
+
 </html>
