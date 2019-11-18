@@ -8,12 +8,17 @@
 		@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 		body{margin:0%;}
 		
+		.toptext{z-index:1;
+		position: absolute;
+		margin-left: 60%;
+		}
 		
 		.sky{
 		width:100%;
 		position:absolute;
 			margin-top:-10px;
 			}
+		
 		
 		h1{
 			position:absolute;
@@ -22,7 +27,7 @@
 			font-family: lobster;
 			font-weight:100;
 			font-size: 140px;
-			margin-left:65%;
+			margin-left:50%;
 			margin-top:100px;
 			
 			
@@ -67,23 +72,24 @@
 		h2 
 		{position:absolute;
 		z-index:2;
-		margin-left:66%;
+		margin-left:54%;
 		margin-top:100px;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		font-size: 14px;
 		font-weight: bold;
-		color:white;}
+		color:white;
+		width:100%;}
 		
 		
 		h3
-		{position:absolute;
-		z-index:2;
-		margin-left:66%;
+		{
+	margin-left:54%;
 		margin-top:270px;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		font-size: 14px;
 		font-weight: bold;
 			color:white;
+			width:100%;
 			
 		}
 	</style>
@@ -91,9 +97,11 @@
 <body>
 	
 	
+	<div class="toptext rellax" data-rellax-speed="-10">
 	<h1>Denali</h1>
 	<h2>Visit</h2>
-	<h3>National Park, Est. 1980</h3>
+	<h3>National Park, Est. 1980</h3></div>
+	
 	<div class="sun rellax" data-rellax-speed="-10"><img src="sunThumbnailsJ&H.svg" alt=""/></div>
 <div class="darkest rellax" data-rellax-speed="5"><img src="darkestThumbnailsJ&H.svg" alt=""/></div>
 <div class="darkmtn rellax" data-rellax-speed="5"><img src="darkpurpleThumbnailsJ&H.svg" alt=""/></div>
