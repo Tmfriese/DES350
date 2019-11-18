@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Denali</title>
+</head>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+		body{margin:0%;}
+		
+		
+		.sky{
+		width:100%;
+		position:absolute;
+			margin-top:-10px;
+			}
+		
+		h1{
+			position:absolute;
+			z-index:1;
+			color:white;
+			font-family: lobster;
+			font-weight:100;
+			font-size: 140px;
+			margin-left:65%;
+			margin-top:100px;
+			
+			
+			
+		}
+		.lightmtn{
+			width:100%;
+			position: absolute;
+			z-index:1;
+			margin-top: 300px;
+		}
+		.lightpurple{
+			width:100%;
+			position:absolute;
+			z-index:2;
+			margin-top:460px;
+		
+			
+		}
+		.darkmtn{
+			width:170%;
+		
+			position:absolute;
+			z-index:3;
+			margin-top:540px;
+		}
+		.darkest{
+			width:100%;
+			position:absolute;
+			z-index:4;
+			margin-top:800px;
+			
+		}
+		.sun{
+			width:20%;
+			position:absolute;
+			z-index:1;
+			margin-left:100px;
+			margin-top:40px;
+			
+		}
+	</style>
+
+<body>
+	<h1>Denali</h1>
+	<div class="sun rellax" data-rellax-speed="-10"><img src="SVG/sunThumbnailsJ&H.svg" alt=""/></div>
+<div class="darkest rellax" data-rellax-speed="5""><img src="SVG/SVG/darklongThumbnailsJ&H.svg" alt=""/></div>
+<div class="darkmtn rellax" data-rellax-speed="5"><img src="SVG/darkpurpleThumbnailsJ&H.svg" alt=""/></div>
+<div class="lightpurple rellax" data-rellax-speed="1""><img src="SVG/lightpurpleThumbnailsJ&H.svg" alt=""/></div>
+<div class="lightmtn"><img src="SVG/lightmtn3ThumbnailsJ&H.svg" alt=""/></div>
+	<div class="sky"><img src="SVG/Asset 4ThumbnailsJ&H.svg" alt=""/></div>
+		
+	<!-- javascript -- by Dixon and Moe: https://github.com/dixonandmoe/relax-->
+    <script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+</body>
+</html>
