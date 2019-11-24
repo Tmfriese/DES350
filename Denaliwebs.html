@@ -4,16 +4,55 @@
 <meta charset="UTF-8">
 <title>Denali</title>
 </head>
+		<style type="text/css">
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {color:#FB4706;
+	font-size: 72px;
+    text-decoration: none;
+
+}
+a:active {
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+		a
+		{
+
+		/* For Safari 3.1 to 6.0 */
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+  /* Standard syntax */
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+		
+
+</style>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
-		body{margin:0%;}
+		body{margin:0%;
+		background-color:#0F1028;}
 		
+		.toptext{z-index:1;
+		position: absolute;
+		margin-left: 60%;
+		}
 		
 		.sky{
 		width:100%;
 		position:absolute;
 			margin-top:-10px;
 			}
+		
 		
 		h1{
 			position:absolute;
@@ -22,7 +61,7 @@
 			font-family: lobster;
 			font-weight:100;
 			font-size: 140px;
-			margin-left:65%;
+			margin-left:50%;
 			margin-top:100px;
 			
 			
@@ -30,6 +69,7 @@
 		}
 		.lightmtn{
 			width:100%;
+			
 			position: absolute;
 			z-index:1;
 			margin-top: 300px;
@@ -67,23 +107,41 @@
 		h2 
 		{position:absolute;
 		z-index:2;
-		margin-left:66%;
+		margin-left:54%;
 		margin-top:100px;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		font-size: 14px;
 		font-weight: bold;
-		color:white;}
+		color:white;
+		width:100%;}
 		
 		
 		h3
-		{position:absolute;
-		z-index:2;
-		margin-left:66%;
+		{
+	margin-left:54%;
 		margin-top:270px;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		font-size: 14px;
 		font-weight: bold;
 			color:white;
+			width:100%;
+			
+		}
+		.text1{
+			align-content: center;
+			font-family: lobster;
+			position: absolute;
+			color:white;
+			border:solid white thin;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 25px;
+			padding-right: 25px;
+			z-index: 4;
+			font-size: 72px;
+			margin-top:1700px;
+			margin-left: 37%;
+			text-decoration: none;
 			
 		}
 	</style>
@@ -91,18 +149,22 @@
 <body>
 	
 	
+	<div class="toptext rellax" data-rellax-speed="-10">
 	<h1>Denali</h1>
 	<h2>Visit</h2>
-	<h3>National Park, Est. 1980</h3>
+	<h3>National Park, Est. 1980</h3></div>
+	
+	
 	<div class="sun rellax" data-rellax-speed="-10"><img src="sunThumbnailsJ&H.svg" alt=""/></div>
-<div class="darkest rellax" data-rellax-speed="5"><img src="darkestThumbnailsJ&H.svg" alt=""/></div>
-<div class="darkmtn rellax" data-rellax-speed="5"><img src="darkpurpleThumbnailsJ&H.svg" alt=""/></div>
-<div class="lightpurple rellax" data-rellax-speed="1"><img src="lightpurpleThumbnailsJ&H.svg" alt=""/></div>
+<div class="darkest rellax" data-rellax-speed="-10"><img src="Asset 23ThumbnailsJ&H.svg" alt=""/></div>
+<div class="darkmtn rellax" data-rellax-speed="-5"><img src="Asset 22ThumbnailsJ&H.svg" alt=""/></div>
+<div class="lightpurple rellax" data-rellax-speed="1"><img src="Asset 21ThumbnailsJ&H.svg" alt=""/></div>
 <div class="lightmtn"><img src="lightmtn3ThumbnailsJ&H.svg" alt=""/></div>
 	<div class="sky"><img src="Asset 1ThumbnailsJ&H.svg" alt=""/></div>
+	
 		
 	
-																   
+	<a href="https://www.nps.gov/dena/index.htm" class="text1">Visit Denali</a>		   
 	
 																   
 	<!-- javascript -- by Dixon and Moe: https://github.com/dixonandmoe/relax-->
