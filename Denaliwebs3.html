@@ -1,0 +1,812 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Denali</title>
+</head>
+		<style type="text/css">
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {color:#FB4706;
+	font-size: 72px;
+    text-decoration: none;
+
+}
+a:active {
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+		a
+		{
+
+		/* For Safari 3.1 to 6.0 */
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+  /* Standard syntax */
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+		
+
+</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+		body{margin:0%;
+		background-color:#0F1028;
+		}
+		
+		.toptext{z-index:1;
+		position: absolute;
+		margin-left: 60%;
+		}
+		
+		.sky{
+		width:100%;
+		position:absolute;
+			margin-top:-10px;
+			}
+		
+		
+		h1{
+			position:absolute;
+			z-index:1;
+			color:white;
+			font-family: lobster;
+			font-weight:100;
+			font-size: 140px;
+			margin-left:50%;
+			margin-top:100px;
+			
+			
+			
+		}
+		.lightmtn{
+			width:100%;
+			
+			position: absolute;
+			z-index:1;
+			margin-top: 300px;
+		}
+		.lightpurple{
+			width:100%;
+			position:absolute;
+			z-index:2;
+			margin-top:460px;
+		
+			
+		}
+		.darkmtn{
+			width:100%;
+			position:absolute;
+			z-index:3;
+			margin-top:540px;
+		}
+		.darkest{
+			width:100%;
+			position:absolute;
+			z-index:4;
+			margin-top:870px;
+			
+		}
+		
+		.sun2
+		{
+		position:absolute;
+			z-index:1;
+			margin-left:10%;
+			margin-top:60px;
+			height: 180px;
+  			width: 180px;
+ 		
+ 			 border-radius: 100%;
+ 			
+			background-color: #EE2F24;
+			
+		}
+		
+		h2 
+		{position:absolute;
+		z-index:2;
+		margin-left:54%;
+		margin-top:100px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+		color:white;
+		}
+		
+		
+		h3
+		{
+	margin-left:54%;
+		margin-top:270px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+			color:white;
+			width:100%;
+		
+		}
+		.text1{
+			align-content: center;
+			font-family: lobster;
+			position: absolute;
+			color:white;
+			border:solid white thin;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 25px;
+			padding-right: 25px;
+			z-index: 4;
+			font-size: 72px;
+			margin-top:1700px;
+			margin-left: 37%;
+			text-decoration: none;
+			
+		}
+		.alaska{
+			position:absolute;
+			height:40%;
+			width:40%;
+			z-index:5;
+			margin-left:60%;
+			margin-top:2400px;
+			float:left;
+		
+		}
+		
+		
+		
+		
+		
+		
+		.about{
+			font-family: lobster;
+			font-weight:100;
+			font-size: 75px;
+			position:absolute;
+			margin-left:10%;
+			margin-top: 2500px;
+			color:white;
+			z-index: 5;
+			float:right;
+			
+			
+		}
+		.activpar{
+			margin-left:10%;
+	
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			color:white;
+		
+			margin-top:2625px;
+			z-index:6;
+			position: absolute;
+			float:right;
+		}
+		
+		.location{
+			margin-left:84%;
+	
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			color:white;
+		
+			margin-top:2520px;
+			z-index:6;
+			position: absolute;
+			float:left;
+		}
+		
+		.hike{height:5%;
+		width:5%;
+		margin-top: 3480px;
+		margin-left:10%;
+		float:left;
+		position: absolute;
+		z-index:6;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			color:white;}
+		.fish{height:9%;
+		width:8%;
+		margin-top: 3640px;
+			margin-left:18%;
+			float:left;
+			position: absolute;
+		z-index:6;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			color:white;
+		}
+		.mush
+		{
+		width:19%;
+		margin-top: 3500px;
+		margin-left:35%;
+		float:right;
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			color:white;}
+		
+		.bike{
+		width:9%;
+		margin-top: 3640px;
+		margin-left:65%;
+		float:right;
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			color:white;}
+		
+		.photo{height:8%;
+		width:8%;
+			margin-top: 3480px;
+		margin-left:82%;
+		float:right;
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			color:white;}
+		p{
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+			margin-top:3800px;
+			color:white;
+			
+		}
+		.hip{margin-top:3650px;
+			
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+		color:white;}
+		.fishp{
+		margin-top:3800px;
+			
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+		color:white;
+		}
+		
+		.mup{
+		margin-top:3650px;
+			
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+		color:white;
+		}
+		.bip{
+		margin-top:3800px;
+			
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+		color:white;
+		}
+		.php{
+		margin-top:3650px;
+			
+		position: absolute;
+		z-index:6;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: 400;
+		color:white;
+		}
+		.hi{margin-left:10%;}
+		.fi{margin-left:20%;}
+		.mu{margin-left:39%;}
+		.bi{margin-left:65%;}
+		.ph{margin-left:82%;}
+		
+		.hiking	{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+			color:white;
+			
+			position: absolute;
+			z-index: 5;
+			float: right;
+			margin-top:3625px;
+			margin-left:10%;}
+		
+		.fishwrap{
+			margin-top:-100px;
+			margin-left:10%;
+			
+		}
+		.mushwrap{
+			margin-top:10%;
+			margin-left:10%;
+		}
+		
+		
+		.fishing{	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+			color:white;
+		
+			position: absolute;
+			z-index: 5;
+			float: right;
+			margin-top:3770px;
+			margin-left:18%;}
+		
+		.mushing{	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+			color:white;
+			
+			position: absolute;
+			z-index: 5;
+			float: left;
+			margin-top:3625px;
+			margin-left:35%;}
+		
+		.biking{	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+			color:white;
+			
+			position: absolute;
+			z-index: 5;
+			float: left;
+			margin-top:3770px;
+			margin-left:65%;}
+		
+		.photogr{	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+			color:white;
+			
+			position: absolute;
+			z-index: 5;
+			float: left;
+			margin-top:3625px;
+			margin-left:82%;}
+		
+		.activities{
+			font-family: lobster;
+			font-weight:100;
+			font-size: 75px;
+			position:absolute;
+			margin-left:10%;
+			margin-top: 3350px;
+			color:white;
+			z-index: 5;
+			float:right;
+			
+			}
+		.other{font-family: lobster;
+			font-weight:100;
+			font-size: 75px;
+			position:absolute;
+			margin-left:10%;
+			margin-top: 4200px;
+			color:white;
+			z-index: 5;
+			float:right;}
+		.sources{	
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-size: 14px;
+			font-weight: bold;
+			color:white;
+			position: absolute;
+			z-index: 5;
+			float: left;
+			margin-top:5100px;
+			margin-left:10%;
+		border-top: solid thin white;
+		padding-top:5px;}
+		
+		
+		
+		<style>
+	body{background-color: #ececec;
+	font-family:helvetica,Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	width:90%;
+	padding-left:5%;
+	padding-top:10px;
+	line-heigt:1.4em;}
+	
+	.leftcolumn{
+	display:inline-block;
+	float:left;
+	width:20%;
+	margin-left:10%;
+	overflow:hidden;
+	position:absolute;
+	margin-top:4345px;
+	z-index:5;
+	}
+	.midcolumn{
+	display:inline-block;
+	float:right;
+	width:20%;
+	padding:10%;
+	overflow:hidden;
+	position:absolute;
+	margin-top:4200px;
+	margin-left:30%;
+	z-index:5;
+	}
+	.rightcolumn{
+	display:inline-block;
+	float:right;
+	width:20%;
+	padding:10%;
+	overflow:hidden;
+	position:absolute;
+	margin-top:4200px;
+	margin-left:60%;
+	z-index:5;}
+		
+		
+		@media only screen and (max-width: 600px){
+			
+			
+			
+		.toptext{z-index:1;
+		position: absolute;
+		margin-left: 40%;
+		}
+			h1{
+			position:absolute;
+			z-index:1;
+			color:white;
+			font-family: lobster;
+			font-weight:100;
+			font-size: 72px;
+		
+			margin-top:100px;
+			
+			}
+		
+			h3
+		{
+	
+		margin-top:200px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 14px;
+		font-weight: bold;
+			color:white;
+			
+		
+		}
+			.sun2{
+		margin-left:5%;
+				width:150px;
+				height:150px;
+				 border-radius: 100%;
+				margin-top:70px;
+				
+			}
+		.text1{
+		
+			
+			
+		
+			font-size: 36px;
+			
+			margin-left: 25%;
+			margin-top: 1200px;
+			}
+			
+			a:hover {
+	font-size: 36px;
+ 
+
+}
+			.about{
+			
+			font-weight:100;
+			font-size: 36px;
+				margin-top:1800px;	
+		
+		}
+		.activpar{
+			
+
+		font-size: 14px;
+		font-weight: 200;
+			margin-top:1900px;
+			}
+			.alaska{
+			
+			width:65%;
+				margin-left:35%;
+			margin-top:2200px;
+			
+		
+		}
+			
+		.location{
+		
+	
+		font-size: 14px;
+		font-weight: 200;
+			margin-left:75%;
+		
+			margin-top:2240px;
+			z-index:6;
+			
+		}
+		
+			
+		.box
+			{
+				height:3500px;
+				width: 500px;
+				margin-top: 2000px;
+				position: absolute;
+				z-index:2;
+				background-color:#0F1028;
+		
+		}
+			.activities{
+			font-weight:100;
+			font-size: 36px;
+			margin-top: 2700px;
+			
+			
+			}
+			.hiking{
+				margin-top:2950px;
+				
+			}
+			.hike{
+				margin-top: 2800px;
+				width:13%;
+			}
+			.hip{
+				margin-top:2980px;
+			}
+			
+			.fish{
+				margin-top:2800px;
+				width:23%;
+				float: right;
+				margin-left:45%;
+				
+			}
+			.fishing{
+				margin-top: 2950px;
+				margin-left: 45%;
+			}
+			.fishp{
+				margin-top:2980px;
+				margin-left:27%;
+				
+			}
+			.mush{
+					margin-top:3100px;
+				width:50%;
+				margin-left: 0%;
+				
+			}
+			.mushing{
+					margin-top:3225px;
+				
+				margin-left: 0%;
+				
+			}
+			.mup{
+				margin-top:3260px;
+				
+				margin-left: -170px;
+			}
+			
+			.bike{
+				margin-top:3395px;
+				width: 25%;
+				margin-left:10%;
+				
+				
+			}
+			.biking{
+				margin-top:3525px;
+
+				margin-left:10%;
+			}
+			.bip{
+				margin-top:3560px;
+
+				margin-left:-270px;
+			}
+			
+			.photo{margin-top:3395px;
+				width: 20%;
+				margin-left:55%;}
+			.photogr{
+				margin-top:3525px;
+
+				margin-left:55%;
+				
+			}
+			.php{
+				margin-top:3560px;
+				margin-left:-27%;}
+			
+			.other{
+			
+			font-size: 36px;
+			
+			margin-left:10%;
+			margin-top: 3700px;
+			
+			
+		}
+			.leftcolumn{
+	
+	width:70%;
+	margin-left:10%;
+	
+	margin-top:3800px;
+	
+	}
+	.midcolumn{
+	width:70%;
+	
+	overflow:hidden;
+	position:absolute;
+	margin-top:4300px;
+	margin-left:0%;
+	
+	}
+	.rightcolumn{
+	width:70%;
+
+	margin-top:4850px;
+	margin-left:0%;
+	}
+			.sources{	
+			
+			margin-top:5450px;
+			margin-left:10%;
+}
+		}
+		
+
+			
+			
+			
+			
+			
+	</style>
+	</style>
+
+<body>
+	<div class="sources">Thanks to our sources!</br> </br>https://www.nps.gov/dena/index.html </div>
+	<div class="other">Visit other National Parks</div>
+	<div class="activities">Activities</div>
+	<div class="photowrap">	<div class="photo"><img src="Asset 42ThumbnailsJ&H.svg" alt=""/></div>
+		<div class="photogr">Photography</div>	<div class="ph"><div class="php">From amatures to <br>experts,
+		Denali offers<br> a landscape that <br>inspires everyone.</div></div></div>
+	
+	<div class="bikewrap"><div class="bike"><img src="Asset 41ThumbnailsJ&H.svg" alt=""/></div>
+		<div class="biking">Biking</div><div class="bi"><div class="bip">Denali has over 92 <br>miles of scenic <br>biking trails: there is <br>something for everyone.</div></div></div>
+	
+<div class="mushwrap"><div class="mush"><img src="Asset 40ThumbnailsJ&H.svg" alt=""/></div>
+		<div class="mushing">Mushing</div>	<div class="mu"><div class="mup">Dog-sledding has been <br>an essential part <br>of Alaskan culture for<br> almost a century. </div></div></div>
+		
+	<div class="fishwrap"><div class="fish"><img src="Asset 39ThumbnailsJ&H.svg" alt=""/></div>
+	<div class="fishing">Fishing</div><div class="fi"><div class="fishp">The park has multiple <br>
+fresh-water sources<br> that provide many <br> fishing opportunies.</div></div></div>
+	
+<div class="hikewrap"><div class="hike"><img src="Asset 38ThumbnailsJ&H.svg" alt=""/></div>
+		<div class="hiking">Hiking</div>	<div class="hi"><div class="hip">Denali offers a wide <br>range of 
+hiking <br>trails that vary in <br>scenery and skill level.</div></div></div>
+	
+<div class="box"></div>
+	
+<div class="toptext rellax" data-rellax-speed="-10">
+	<h1>Denali</h1>
+	<h2>Visit</h2>
+	<h3>National Park, Est. 1980</h3></div>
+<div class="location">Denali, Alaska </br></br>63.540777°N</br></br> -151.723614°W</br></br> 156,250 sq mi</div>
+	<div class="alaska"><img src="Asset 33ThumbnailsJ&H.svg" alt=""/></div>
+<div class="activpar">In Denali, we hope you celebrate the true national</br></br> parks here, a place that has been set aside to connect</br></br> people to America’s past, a place that protects </br></br>
+present wildlife and amazing landscapes for your </br></br>
+enjoyment and that of future generations, and </br></br>
+a place that celebrates the individual’s opportunity to </br></br>experience inspiration, awe, and wonder.</div>
+<div class="about">About</div>
+<div class="sun2 rellax" data-rellax-speed="-10"></div>
+
+
+<div class="darkest rellax" data-rellax-speed="-10"><img src="Asset 44ThumbnailsJ&H.svg" alt=""/></div>
+
+<div class="darkmtn rellax" data-rellax-speed="-5"><img src="Asset 22ThumbnailsJ&H.svg" alt=""/></div>
+<div class="lightpurple rellax" data-rellax-speed="1"><img src="Asset 21ThumbnailsJ&H.svg" alt=""/></div>
+<div class="lightmtn"><img src="Asset 35ThumbnailsJ&H.svg" alt=""/></div>
+	
+	<div class="sky"><img src="Asset 34ThumbnailsJ&H.svg" alt=""/></div>
+	
+		
+	
+<a href="https://www.nps.gov/dena/index.htm" class="text1">Visit Denali</a>		   
+	
+																   
+	<!-- javascript -- by Dixon and Moe: https://github.com/dixonandmoe/relax-->
+    <script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+
+
+	<div class="leftcolumn">
+	
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+		</script></div>
+		<div class="rightcolumn">
+	
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://snguye44.github.io/DES350/natureposterfinal.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://jmiran28.github.io/DES350/olympic-poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://samorie.github.io/DES350/poster_final1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+		</script></div>
+		
+	<div class="midcolumn">
+	
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://gira006.github.io/DES350/poster_animation.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://agarc88.github.io/DES350/Mesa-Verde-Poster-1_1.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://kdirnb2.github.io/DES350/newposter.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+		</script></div>
+																		
+</body>
+</html>
